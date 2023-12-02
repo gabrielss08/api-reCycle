@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/central.css">
+<nav>
+        <div class="logo">
+            <a href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+
+
+    </nav>
+    <div class="tab-container">
+        <div class="tabs">
+          <div class="tab active">Post</div>
+          <div class="tab">perfil</div>
+        </div>
+    </div>
+      <div class="content">
+        <div class="tab-content active">
+          Conteúdo postado pelos usuarios<br>
+          Conteúdo postado pelos usuarios<br>
+          Conteúdo postado pelos usuarios<br>
+          Conteúdo postado pelos usuarios<br>
+          Conteúdo postado pelos usuarios<br>
+        </div>
+        <div class="tab-content">
+          perfil do usuario com reciclagens, e informações deles
+        </div>
+      </div>
+
+
+      <div class="usuario">
+        <h1>Nome</h1>
+      </div>
+
+      <div class="tarefas">
+        <h1>tarefa do dia:</h1>
+      </div>
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".tab");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => {
+        // Remove a classe 'active' de todas as guias e conteúdos
+        tabs.forEach((t) => t.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
+
+        // Adicione a classe 'active' apenas à guia e conteúdo clicados
+        tab.classList.add("active");
+        tabContents[index].classList.add("active");
+      });
+    });
+  });
+    </script>

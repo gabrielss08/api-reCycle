@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #aaaaaa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #808080;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #008000;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0d272d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #008000;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .con h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+header .imagem {
+    position: relative;
+}
+
+header .imagem img {
+    max-width: 600px;
+    margin: auto;
+}
+
+.login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    width: 455px;
+    height: 500px;
+    padding: 30px;
+    color: #000;
+    border-radius: 10px;
+}
+
+.login-div form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-div input{
+    margin-top: 50px;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+}
+
+.login-div img{
+    width: 65px;
+    height: auto;
+}
+
+input::placeholder{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #0d272d;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFF;
+    margin: 50px;
+}
+
+p{
+    color: #000;
+}
+
+a{
+    color: #008000;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .coluna .logo {
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .coluna p {
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .coluna .social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .coluna .social a {
+    color: #ccc;
+    border: 1pc solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+footer .coluna .social a:hover {
+    color: #fff;
+    background-color: #008000;
+    border-color: #008000;
+}
+
+footer .coluna h4 {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .coluna>a {
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .coluna>a:hover {
+    color: #0d272d;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width <600px) {
+    header .imagem::before {
+        display: none;
+    }
+
+    .login {
+        height: 90vh;
+        margin: 20px;
+    }
+    .login p{
+        font-size: 12px;
+    }
+
+    footer {
+        grid-template-columns: 2fr 90px;
+    }
+}

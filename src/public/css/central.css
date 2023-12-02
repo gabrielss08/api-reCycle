@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #808080;
+}
+
+nav {
+    height: 50px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.logo {
+    max-width: 50px;
+
+
+}
+
+.tab-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza as guias horizontalmente */
+    align-items: flex-start; /* Alinha as guias na parte superior */
+  }
+  
+  .tabs {
+    display: flex;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f0f0f0;
+  }
+  
+  .tab.active {
+    background-color: #ffffff;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center; /* Centraliza as guias horizontalmente */
+    align-items: flex-start;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 20px; /* Espaçamento entre as guias e o conteúdo */
+    border: 1px solid #000;
+    
+}
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab-content {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+  .usuario{
+    position: absolute;
+    display: flex;
+    justify-content: left; /* Centraliza as guias horizontalmente */
+    align-items: flex-start;
+    text-align: center;
+    margin: 20px;
+    background-color: blue;
+    width: 200px;
+    height: 600px;
+    float: left;
+  }
+
+  .tarefas{
+    display: flex;
+    justify-content: right; /* Centraliza as guias horizontalmente */
+    text-align: center;
+    margin: 20px;
+    background-color: blue;
+    width: 200px;
+    float: right;
+    height: 600px;
+  }
